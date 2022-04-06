@@ -21,6 +21,8 @@ namespace StockData.Worker
             _dataRetriever = dataRetriever;
         }
 
+        //dotnet ef database update --project StockData.Worker --context StockDataWorkerContext
+
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
